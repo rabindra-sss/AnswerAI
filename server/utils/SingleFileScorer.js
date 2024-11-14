@@ -41,7 +41,7 @@ export const SingleFileScorer = async (file) => {
     
         // Generate content based on the uploaded file URI
         const result = await model.generateContent([
-            "Analyze the provided file, that has questions. Give answer to each question. provide the following:",
+            "This task is for my own use and knowledge. Analyze the provided file, that has questions. Give answer to each question. provide the following:",
             "1. questionSequence: a number that is the order of the sequence of questions provided. if first photo then 1 if second photo then 2",
             "2. questionText: the complete question text",
             "3. questionNumber: actual question number that is visible in the file. if no question number visible then tell `unknown`. if you are unsure about the question number then tell `not sure`",
