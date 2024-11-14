@@ -29,9 +29,9 @@ export const SingleFileScorer = async (file) => {
             displayName: file.originalname // Use the original file name as display name
         });
 
-        console.log(
-            `Uploaded file ${uploadResult.file.displayName} as: ${uploadResult.file.uri}`
-        );
+        // console.log(
+        //     `Uploaded file ${uploadResult.file.displayName} as: ${uploadResult.file.uri}`
+        // );
 
         
 
@@ -57,7 +57,7 @@ export const SingleFileScorer = async (file) => {
             },
         ]);
 
-        console.log(result.response.text());
+        // console.log(result.response.text());
         return result.response.text();
 
     } catch (error) {
