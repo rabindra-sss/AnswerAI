@@ -17,7 +17,7 @@ const CompareScoring = () => {
     formData.append('file', singleFile);
 
     try {
-      const response = await axios.post('http://localhost:5000/api/score-test-file', formData, {
+      const response = await axios.post('https://answerai-faon.onrender.com/api/score-test-file', formData, {
         headers: {
           'Content-Type': 'multipart/form-data',
         },
