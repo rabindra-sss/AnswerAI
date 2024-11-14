@@ -25,7 +25,7 @@ app.use(cookieParser())
 
 // Configure CORS with explicit origin and credentials
 const corsOptions = {
-    origin: ['http://localhost:3000', 'https://test-assess.vercel.app'], // Your frontend URL
+    origin: ['http://localhost:3000', 'https://answer-ai-five.vercel.app'], // Your frontend URL
     credentials: true, // Allow credentials (cookies)
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
