@@ -48,7 +48,7 @@ export const SingleFileScorer = async (file) => {
             "4. option: the correct option that consist the correct answer to the question. if the question is not a option type or multiple choice (e.g. subjective) then tell `NA`",
             "5. answer: the answer to the question",
             "6. surity: the percentage of how sure you are in your answer. be strict about because I am serous about assurance",
-            "provide the results in structured format, example JSON.",
+            "provide the results in structured format, example JSON. you must provide the entire response at once as I dont want broken response.",
             { 
               fileData: {
                 fileUri: uploadResult.file.uri,
