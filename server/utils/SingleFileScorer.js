@@ -57,7 +57,7 @@ export const SingleFileScorer = async (file) => {
             },
         ]);
 
-        // console.log(result.response.text());
+        console.log(result.response.text());
         return result.response.text();
 
     } catch (error) {
