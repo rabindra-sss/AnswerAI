@@ -43,12 +43,12 @@ export const SingleFileScorer = async (file) => {
         const result = await model.generateContent([
             "This task is for my own use and knowledge. Analyze the provided file, that has questions. Give answer to each question. provide the following:",
             "1. questionSequence: a number that is the order of the sequence of questions provided. if first photo then 1 if second photo then 2",
-            "2. questionText: the complete question text",
+            "2. questionText: the question text. limit the number of words shown to 15 words. but the other case, if there are two question having many many things common with slight variation then limit the common words to 15 words and then write `...` then give the text that is unique to that question only",
             "3. questionNumber: actual question number that is visible in the file. if no question number visible then tell `unknown`. if you are unsure about the question number then tell `not sure`",
             "4. option: the correct option that consist the correct answer to the question. if the question is not a option type or multiple choice (e.g. subjective) then tell `NA`",
-            "5. answer: the answer to the question",
+            "5. answer: the answer to the question.",
             "6. surity: the percentage of how sure you are in your answer. be strict about because I am serous about assurance",
-            "provide the results in structured format, example JSON. you must provide the entire response at once as I dont want broken response.",
+            "provide the results in structured format, example JSON. you must provide the entire response at once as I dont want broken response. hence you need to balance the amount of explanation needed in the answer property accordingly",
             { 
               fileData: {
                 fileUri: uploadResult.file.uri,
