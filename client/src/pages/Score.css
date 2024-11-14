@@ -1,0 +1,50 @@
+.scorer-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.scorer-form .form-group {
+    margin-bottom: 15px;
+}
+
+.scorer-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.scorer-form input,
+.scorer-form textarea {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.scorer-form button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.scorer-form button:disabled {
+    background-color: #ccc;
+}
+
+.score-result h2 {
+    color: green;
+}
+
+.error-message h2 {
+    color: red;
+}
