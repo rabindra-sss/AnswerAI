@@ -41,7 +41,7 @@ export const SingleFileScorer = async (file) => {
     
         // Generate content based on the uploaded file URI
         const result = await model.generateContent([
-            "This task is for my own use and knowledge. Analyze the provided file, that has questions. Give answer to each question. provide the following:",
+            "This task is for my own use and knowledge. Analyze the provided file, that has questions. Give answer to each question. You can find the answer by internet search if the question has already been answered. If you are not capable of internet search or the question has not been answered yet, in that case you answer the question. provide the following:",
             "1. questionSequence: a number that is the order of the sequence of questions provided. if first photo then 1 if second photo then 2",
             "2. questionText: the question text. limit the number of words shown to 15 words. but the other case, if there are two question having many many things common with slight variation then limit the common words to 15 words and then write `...` then give the text that is unique to that question only",
             "3. questionNumber: actual question number that is visible in the file. if no question number visible then tell `unknown`. if you are unsure about the question number then tell `not sure`",
