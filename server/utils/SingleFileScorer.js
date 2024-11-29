@@ -45,9 +45,11 @@ export const SingleFileScorer = async (file) => {
             "1. questionSequence: a number that is the order of the sequence of questions provided. if first photo then 1 if second photo then 2",
             "2. questionText: the question text. limit the number of words shown to 15 words. but the other case, if there are two question having many many things common with slight variation then limit the common words to 15 words and then write `...` then give the text that is unique to that question only",
             "3. questionNumber: actual question number that is visible in the file. if no question number visible then tell `unknown`. if you are unsure about the question number then tell `not sure`",
-            "4. option: the correct option that consist the correct answer to the question. if the question is not a option type or multiple choice (e.g. subjective) then tell `NA`",
+            "4. option: the correct option that consist the correct answer to the question. if the question is not a option type or multiple choice (e.g. subjective) then tell `NA`. if you got the answer from the internet then additionally mention the word `internet` in a bracket (e.g. A (internet) )",
             "5. answer: the answer to the question.",
             "6. surity: the percentage of how sure you are in your answer. be strict about because I am serous about assurance",
+            "7. url: the source link url where you got the answer",
+
             "provide the results in structured format, example JSON. you must provide the entire response at once as I dont want broken response. hence you need to balance the amount of explanation needed in the answer property accordingly",
             { 
               fileData: {
